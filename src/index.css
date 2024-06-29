@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    
+}
+
+/* Define the bounce animation */
+@keyframes bounce {
+    0% {
+      transform: translateY(-100%);
+      animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+    100% {
+      transform: translateY(0);
+      animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
+  }
+  
+  /* Apply the bounce animation to an element */
+  .element-to-bounce {
+    animation: bounce 0.5s;
+  }
+  
+  .MuiDialog-paper::-webkit-scrollbar {
+    display: none;
+  }
+  
+
+
+  
